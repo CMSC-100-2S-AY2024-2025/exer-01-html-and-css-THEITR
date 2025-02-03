@@ -5,42 +5,48 @@
     align-items: center;
     flex-flow: row wrap;
 }
-.header{
+
+a{
+    text-decoration: none; /* Removes underline from anchor ref (https://getcssscan.com/blog/how-to-remove-underline-from-link-css#:~:text=To%20remove%20underline%20from%20a%20link%20with%20CSS%2C%20add%20text,decoration%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,fixed%20color%20to%20the%20links.) */
+    color: inherit; /*removes blue color ref (https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag)*/
+}
+
+header{
+    padding: 10px;
+    position: fixed; /* allows header to always be accessible even if page is scrolled down*/
+    width: 100%;
+    /* set top and let to 0,0 so that background will be generated at the right position*/
+    top: 0;
+    left: 0;
+
+    /* Design */
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    /*display*/
     display: flex;
-    justify-content:center;
-    margin: 10px;
-    margin-bottom: 20px;
-    flex-flow: row wrap;  
-    border: 3px solid red; 
-    background-color: lightblue;
+    justify-content:space-between; /*separates logo and nav bar*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar{
+    /*font related*/
+    font-size: 20px;
+    font-weight: 800;
+
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .about-me{
-    display: flex;
-    justify-content:center;
-    margin: 10px;
-    padding-bottom: 100px;
-    flex-flow: row wrap;  
-    border: 3px solid red; 
-    background-color: lightblue;
 }
 
 .header-links{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.header-link{
-    font-family: monospace;
-    font-weight: bolder;
-    font-size: 50px;
-    padding: 20px;
 }
 
 .logo{
-    margin: 10px;
 }
 
 .photos{
@@ -55,7 +61,7 @@
 }
 
 body{
-    background-image: url('images/background.gif');
+    /*background-image: url('images/background.gif');*/
     padding-bottom: 100px;
 }
 footer{ /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp Reference*/

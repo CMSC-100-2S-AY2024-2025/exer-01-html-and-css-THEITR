@@ -1,0 +1,68 @@
+
+.cont{/* alligns and enables wrap for items with this class */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.header{
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+    margin-bottom: 20px;
+    flex-flow: row wrap;  
+    border: 3px solid red; 
+    background-color: lightblue;
+}
+
+.about-me{
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+    padding-bottom: 100px;
+    flex-flow: row wrap;  
+    border: 3px solid red; 
+    background-color: lightblue;
+}
+
+.header-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.header-link{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
+}
+
+.photo{
+    margin: 20px;
+}
+
+body{
+    background-image: url('images/background.gif');
+    padding-bottom: 100px;
+}
+footer{ /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp Reference*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+}

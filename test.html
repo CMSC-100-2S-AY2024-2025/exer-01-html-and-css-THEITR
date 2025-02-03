@@ -8,43 +8,65 @@
 </head>
 
 <body>
+    
     <!--Header logo and info-->
     <header>
-        <div class="logo"><a href="#">Haraya Ching</a></div>
+        <div class="logo"><a href="#">Haraya <span style="color:lightgreen;">Ching</span></a></div> <!--uses span to change color of text-->
         <!--anchors to parts of the web page in a nav tag ref(https://www.w3schools.com/Tags/tag_nav.asp)-->
         <div class="nav-bar">
-        <a href="#footer">About me</a>
-        <a href="#footer">My Projects</a>
-        <a href="#footer">Contact Info</a>
+        <a href="#about">About me</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Info</a>
         </div>
     </header>
 
-    <div class="cont"> <!--main image-->
+
+      <!--top section-->
+    <div class="cont-top" id="top"> <!--main image-->
+        
+        <div class="top-text">
+            <h1 style="margin-left: 30px;"> Hi i am <span style="color: lightgreen;">Haraya</span> Ching</h1>
+            <p style="margin-left: 30px;">This website was made by me for the second exercise for my cmsc 100 course</p>
+        </div>
         <img src="images/photo1.jpg" alt="photo1"  width="50%" height="50%">
+
     </div>
 
-    <div class="cont"><!--previous projects-->
+    <!--previous projects-->
+
+    <div class="cont-prevproj" id="projects">
         <h1 style="color: white;">Previous Projects</h1>
         <div class="photos">
-            <img class="photo" src="images/photo3.png" alt="photo1"  width="10%" height="10%">
-            <img class="photo" src="images/photo1.jpg" alt="photo1"  width="10%" height="10%">
-            <img class="photo" src="images/photo1.jpg" alt="photo1"  width="10%" height="10%">
+            <ul>
+                <img class="photo" src="images/photo3.png" alt="photo1"  width="10%" height="10%">
+                <img class="photo" src="images/photo4.png" alt="photo4"  width="10%" height="10%">
+                <img class="photo" src="images/photo5.png" alt="photo4"  width="10%" height="10%">
+            </ul>
         </div>
-
-    <div class="about-me"><!--about me section-->
-        <h1> Hi i am Haraya Ching</h1>
-
-        <p> 
-            I am a 20-year-old sophomore currently studying Computer Science at UPLB here is my web Portfolio.
-        </p>
-
     </div>
 
+    <!--about me-->
+    <div class="cont-aboutme" id="about">
+        <h1>About me</h1>
+        <p> I am a 20 year old student currently studying computer science in UPLB, I like cooking, playing online games, and exercising thank you for visiting my webpage!!</p>
+    </div>
+    
+    <!--contact-->
+    <div class="cont-contact" id="contact">
+        <h1>Contacts</h1>
+        <p> 
+            Email: Hsching@gmail.com
+            <br/>
+            Mobile: 0999-524-****
+            <br/>
+            facebook: https://www.facebook.com/haraya.ching.7/
+        </p>
+    </div>
     <!--footer-->
     <footer>
         <div class="foot">
             <p>Webpage by: Haraya Ching</p>
-            <a href="#header">To top</a>
+            <a href="#top">To top</a>
         </div>
     </footer>
 

@@ -1,14 +1,12 @@
 
-.cont{/* alligns and enables wrap for items with this class */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
 a{
     text-decoration: none; /* Removes underline from anchor ref (https://getcssscan.com/blog/how-to-remove-underline-from-link-css#:~:text=To%20remove%20underline%20from%20a%20link%20with%20CSS%2C%20add%20text,decoration%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,fixed%20color%20to%20the%20links.) */
     color: inherit; /*removes blue color ref (https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag)*/
+}
+a:hover{ /*reference for hover https://www.w3schools.com/cssref/sel_hover.php*/
+    color: lightgreen;
+    font-size: larger;
+    transition:font-size .5s ease; /* css transition reference https://www.w3schools.com/css/css3_transitions.asp */
 }
 
 header{
@@ -33,39 +31,94 @@ header{
 .nav-bar{
     /*font related*/
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
 
     width: 40%;
     display: flex;
     justify-content: space-evenly;
-}
-
-.about-me{
-}
-
-.header-links{
+    flex-wrap: wrap;
 }
 
 .logo{
+    font-size: 30px;
+    font-weight: 800;
 }
 
-.photos{
+.cont-top{/* alligns items in this class */
     display: flex;
+    color: white;
+    align-items:center;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    margin-bottom: 150px;
+}
+
+.top-text{
+    background-color:rgba(0, 125, 95, 0.3);/*used rgba for opacity control on background color ref(https://www.w3schools.com/css/css_colors_rgb.asp)*/
+    display: flex;
+    width: 90%;
+    height: 350px;
+    margin: 30px;   
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap; 
+    flex-direction: column;
+    font-family: sans-serif;
 }
 
 .photo{
-    margin: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.cont-prevproj{/* elements in this class go to the center */
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.photos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-aboutme{/* elements in this class go to the center */
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cont-contact{/* elements in this class go to the center */
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 body{
-    /*background-image: url('images/background.gif');*/
+    background-image: url('images/background.gif');
     padding-bottom: 100px;
 }
 footer{ /*https://www.w3schools.com/howto/howto_css_fixed_footer.asp Reference*/
-    position: fixed;
+    position: fixed;    
+    font-family: sans-serif;
     left: 0;
     bottom: 0;
     width: 100%;

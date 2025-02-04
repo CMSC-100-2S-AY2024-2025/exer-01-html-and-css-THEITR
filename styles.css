@@ -98,6 +98,9 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    background-color:rgba(0, 125, 95, 0.3);
+    margin:30px;
 }
 
 .cont-contact{/* elements in this class go to the center */

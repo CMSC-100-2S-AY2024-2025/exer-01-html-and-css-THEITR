@@ -156,7 +156,7 @@ header{
     font-size: 95%;
     width: 400px;
     max-width: 90%;
-    height: 450px;
+    min-height: 450px;
     border-radius: 25px; /*makes borders rounder :) reference https://www.w3schools.com/css/css3_borders.asp*/
 
     background-color:rgba(0, 125, 95, 0.3);

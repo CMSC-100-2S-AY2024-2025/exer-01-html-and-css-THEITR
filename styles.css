@@ -3,6 +3,7 @@ a{
     text-decoration: none; /* Removes underline from anchor ref (https://getcssscan.com/blog/how-to-remove-underline-from-link-css#:~:text=To%20remove%20underline%20from%20a%20link%20with%20CSS%2C%20add%20text,decoration%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,fixed%20color%20to%20the%20links.) */
     color: inherit; /*removes blue color ref (https://stackoverflow.com/questions/6722467/how-do-i-remove-the-default-link-color-of-the-html-hyperlink-a-tag)*/
 }
+
 a:hover{ /*reference for hover https://www.w3schools.com/cssref/sel_hover.php*/
     color: lightgreen;
     font-size: larger;
@@ -13,7 +14,7 @@ header{
     padding: 10px;
     position: fixed; /* allows header to always be accessible even if page is scrolled down*/
     width: 100%;
-    /* set top and let to 0,0 so that background will be generated at the right position*/
+    /* set top and let to 0,0 so that background will be generated at the right position same method applied to footer*/
     top: 0;
     left: 0;
 
@@ -23,7 +24,7 @@ header{
     font-family: sans-serif;
     /*display*/
     display: flex;
-    justify-content:space-between; /*separates logo and nav bar*/
+    justify-content:space-between; /*separates logo and nav bar (anchors)*/
     align-items: center;
     flex-wrap: wrap;
 }
@@ -65,8 +66,9 @@ header{
 }
 
 .photo{
-    padding-left: 75px;
-    padding-right: 75px;
+    height: 20%;
+    width: 20%;
+    margin: 10px;
 }
 .photo:hover{
     height: 23%;
@@ -79,12 +81,11 @@ header{
     color: white;
     font-family: sans-serif;
     margin-bottom: 150px;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .photos{
@@ -92,18 +93,21 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    flex-wrap: wrap;
 }
 .gallery{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-align: center; 
+    width: 100%;
+    padding-bottom: 100px;
 }
 .desc{
+    font-size: 95%;
     width: 200px;
+    max-width: 90%;
     height: 200px;
+    border-radius: 25px; /*reference https://www.w3schools.com/css/css3_borders.asp*/
     background-color: rgba(0, 125, 95, 0.3);;
 }
 .cont-aboutme{/* elements in this class go to the center */

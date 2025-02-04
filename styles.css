@@ -93,7 +93,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items:center;
-    flex: 1 1 300px; /*makes sure the items grow and shrink with the window (this prevents flex wrap in gallery from turning into a column when window is maximised)*/
+    flex: 1 1 300px; /*makes sure the items grow and shrink with the window (this prevents flex wrap in gallery from turning into a column when window is maximised) reference (https://developer.mozilla.org/en-US/docs/Web/CSS/flex)*/
 }
 .gallery{
     display: flex;
@@ -110,7 +110,7 @@ header{
     width: 200px;
     max-width: 90%;
     height: 200px;
-    border-radius: 25px; /*reference https://www.w3schools.com/css/css3_borders.asp*/
+    border-radius: 25px; /*makes borders rounder :) reference https://www.w3schools.com/css/css3_borders.asp*/
     background-color: rgba(0, 125, 95, 0.3);;
 }
 .cont-aboutme{/* elements in this class go to the center */

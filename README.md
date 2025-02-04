@@ -15,11 +15,11 @@ Live website Link: https://cmsc-100-2s-ay2024-2025.github.io/exer-01-html-and-cs
 
 # How to make a github page
 
-1. Go to settings tab of github Repository (where project is)
-2. Go to the Pages tab
-3. Select Deploy from Branch select main branch (or what branch you want to use), then select the folder containing your html.
-4. Make your filename index.html so that it will be launched
+1. Rename your html file to 'index.html'
+2. Go to your github repository then go to the settings.
+3. Find the code and automation section of the settings, and select pages.
+4. Select source to "deploy from branch", then in branch select preferred branch (main in my case), then select the root folder and save
+5. wait a bit then reload, where you will see the live link for your website.
 
 # Takeaways from this Excer 
-
 There were allot of takeaways from this excer, first of it deepened my understanding of html and css, while also allowing me to get more aclimated towards using git and github.

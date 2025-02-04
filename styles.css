@@ -68,6 +68,12 @@ header{
     padding-left: 75px;
     padding-right: 75px;
 }
+.photo:hover{
+    height: 23%;
+    width: 23%;
+    transition:height .5s ease;
+    transition:width .5s ease;
+}
 
 .cont-prevproj{/* elements in this class go to the center */
     color: white;
@@ -84,14 +90,26 @@ header{
 .photos{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+.desc{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 125, 95, 0.3);;
+}
 .cont-aboutme{/* elements in this class go to the center */
     color: white;
     font-family: sans-serif;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -100,7 +118,7 @@ header{
     text-align: center;
 
     background-color:rgba(0, 125, 95, 0.3);
-    margin:30px;
+    margin:50px;
 }
 
 .cont-contact{/* elements in this class go to the center */

@@ -119,17 +119,53 @@ header{
     margin-bottom: 100px;
 
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:50px;
+}
+.finalproj{
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 
+    border-radius: 25px; /*makes borders rounder :) reference https://www.w3schools.com/css/css3_borders.asp*/
+
     background-color:rgba(0, 125, 95, 0.3);
-    margin:50px;
+    margin:30px;
 }
 
-.cont-contact{/* elements in this class go to the center */
+.aboutme{
     color: white;
+    font-family: sans-serif;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    font-size: 95%;
+    width: 300px;
+    max-width: 90%;
+    height: 350px;
+    border-radius: 25px; /*makes borders rounder :) reference https://www.w3schools.com/css/css3_borders.asp*/
+
+    background-color:rgba(0, 125, 95, 0.3);
+    margin:30px;
+}
+
+
+.cont-contact{/* elements in this class go to the center */
+    color: lightgreen;
     font-family: sans-serif;
     margin-bottom: 150px;
 
